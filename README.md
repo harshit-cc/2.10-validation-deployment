@@ -1,4 +1,4 @@
-# Insert Lesson Title
+# React Deployment
 
 ## Dependencies
 
@@ -10,10 +10,17 @@ Refer to the following markdown file for the respective sections of the class:
 ## Lesson Objectives
 
 Learners will understand:
-- Insert the knowledge to be acquired
+- What are serverless deployment and its benefits.
+- What are IP Address, Ports and Domain (A Record & CNAME).
+- What is CDN and its benefits.
+- What are environmental variables and how to deploy them.
+- How can we validate environmental variables in the application and why do we do it.
+
 
 Learners will be able to:
-- Insert the skillset to be acquired
+- Implement environmental variables using [dotenv](https://www.npmjs.com/package/dotenv).
+- Validate environmental variables imported into application using [joi](https://www.npmjs.com/package/joi)
+- Deploy a sample application to GitHub Pages.
 
 
 ## Lesson Plan
