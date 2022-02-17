@@ -14,12 +14,11 @@ Learners will understand:
 - What are IP Address, Ports and Domain (A Record & CNAME).
 - What is CDN and its benefits.
 - What are environmental variables and how to deploy them.
-- How can we validate environmental variables in the application and why do we do it.
 
 
 Learners will be able to:
 - Implement environmental variables using [dotenv](https://www.npmjs.com/package/dotenv).
-- Validate environmental variables imported into application using [joi](https://www.npmjs.com/package/joi)
+- Validate environmental variables imported into application using [joi](https://www.npmjs.com/package/joi) to flag out missing environmental variables before running the application.
 - Deploy a sample application to GitHub Pages.
 
 
