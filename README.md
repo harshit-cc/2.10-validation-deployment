@@ -1,24 +1,24 @@
-# React Deployment
+# 2.10 Schema Validation and React Deployment
 
 ## Dependencies
 
 Refer to the following markdown file for the respective sections of the class:
-- [Self Studies](./studies.md)
+- [Self Studies](https://github.com/su-ntu-ctp/6m-software-2.1-react-intro/blob/main/reference.md#210-validation-and-deployment)
 - [Lesson](./lesson.md)
 - [Assignment](./assignment.md)
 
 ## Lesson Objectives
 
 Learners will understand:
+- What is schema validation in input forms.
+- What are environmental variables and how to deploy them.
 - What are serverless deployment and its benefits.
 - What are IP Address, Ports and Domain (A Record & CNAME).
 - What is CDN and its benefits.
-- What are environmental variables and how to deploy them.
-
 
 Learners will be able to:
+- Validate input fields in React forms using [joi](https://www.npmjs.com/package/joi).
 - Implement environmental variables using [dotenv](https://www.npmjs.com/package/dotenv).
-- Validate environmental variables imported into application using [joi](https://www.npmjs.com/package/joi) to flag out missing environmental variables before running the application.
 - Deploy a sample application to GitHub Pages.
 
 
