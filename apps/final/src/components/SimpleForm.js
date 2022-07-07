@@ -39,6 +39,8 @@ function SimpleForm() {
 
     setUser(userData);
     setError(errorData);
+    if (process.env.NODE_ENV === 'development')
+      console.log('userData', userData);
   }
   const validate = (event) => {
     const {name, value} = event.target;
@@ -53,6 +55,7 @@ function SimpleForm() {
   /*
     Submit handler
   */
+
   const handlerOnSubmit = (event) => {
     event.preventDefault();
     const result = Joi.validate(user, schema, {abortEarly: false});

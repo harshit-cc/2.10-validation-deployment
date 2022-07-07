@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="App">
       <SimpleForm />
+      <h3>{process.env.REACT_APP_MESSAGE}</h3>
     </div>
   );
 }

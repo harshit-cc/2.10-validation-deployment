@@ -12,33 +12,26 @@ Refer to the following markdown file for the respective sections of the class:
 Learners will understand:
 - What is schema validation in input forms.
 - What are environmental variables and how to deploy them.
-- What are serverless deployment and its benefits.
-- What are IP Address, Ports and Domain (A Record & CNAME).
-- What is CDN and its benefits.
 
 Learners will be able to:
-- Validate input fields in React forms using [joi](https://www.npmjs.com/package/joi).
+- Validate input fields in React forms using [Joi](https://www.npmjs.com/package/joi).
 - Implement environmental variables using [dotenv](https://www.npmjs.com/package/dotenv).
 - Deploy a sample application to GitHub Pages.
-
 
 ## Lesson Plan
 
 |Duration|What|How or Why|
 |--------|-----|-------|
-|- 5mins |Start zoom session|So that students can join early and start class on time|
-|15 mins|Self studies check-in|Encourage students to ask questions in regards to their self studies material.|
-|10 mins|I DO Part 1|Instructor demonstrates...|
-|10 mins|WE DO Part 1|Learners practice...|
-|10 mins|I DO Part 2|Instructor demonstrates...|
-|10 mins|I DO Part 2|Learners practice...|
-|5 mins| Break||
-|||**1 HR 00 MIN**|
-|10 mins|I DO Part 3| Instructor demonstrates...|
-|10 mins|WE DO part 3| Learners practice...|
-|10 mins|Assignment briefing|
-|||**1 HR 30 MIN**|
-|40 mins|Learners self attempt on assignments|
-|20 mins|Instructors walk through at least 1 question of the assignments|
-|||**END CLASS 2 HR 30 MIN**|
+|- 5 mins |Start zoom session|So that students can join early and start class on time|
+| 15 mins | Self studies check-in | Encourage students to ask questions in regards to their self studies material.|
+| 30 mins | Part 1 | JOI Schema Validation |
+| 10 mins | Break ||
+|||**1 HOUR MARK** |
+| 20 mins | Part 2 | Environment Variables |
+| 30 mins | Part 3 | Deploying to GitHub Pages |
+| 10 mins | Assignment | Briefing |
+|||**2 HOUR MARK** |
+| 45 mins || **ASSIGNMENT** |
+| 15 mins || Walkthrough, discussion and Q&A |
+|||**3 HOUR MARK - END CLASS**|
 

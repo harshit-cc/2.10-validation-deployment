@@ -1,5 +1,4 @@
 ## Assignment
 
-Using the demo_app.zip file attached in the assignment folder, deploy the application in Github pages and test the application.
-
-Challenge: Add JOI validator to the Form.js and display the errors in the UI.
+Choose an existing React project from your previous assignment and  deploy the
+application in a Github Pages.

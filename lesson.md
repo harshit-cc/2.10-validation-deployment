@@ -63,45 +63,85 @@ Test the entry form with invalid inputs and observe the error messages displayed
 
 ## Part 2: Environment Variables and `dotenv`
 
-Environment variables are variables whose value are set outside the program, typically through functionality built into the appication. An environment variable is made up of a name/value pair, and any number may be created and available for reference at a point in time.
+Environment variables are pre-defined name/value pairs that are set outside a program, 
+typically used to configure your code used to generate your application. For example, 
+you can set an environment variable `DEBUG=true` in your code to generate more verbose 
+debugging information used during development. When the code is ready for production, 
+the variable can be set to `DEBUG=false` to switch of debugging messages for better
+performance.
 
-For nodeJS, the dotenv package can be used to create system variables on the server side.
+In Node.js, the `dotenv` package can be used to create system variables on the server side.
 
-For ReactJS, dotenv is automatically installed and the environment variables start with the prefix `REACT_APP_`.
+For ReactJS, `dotenv` is automatically installed and the environment variables start with 
+the prefix `REACT_APP_`, e.g. `REACT_APP_TITLE`
 
-Ex.
-REACT_APP_TITLE
+In order to create a configuration file for the application, create a file called `.env` 
+in the root directory of the application.
 
-In order to create a configuration file for the application, create a file called `.env` and place the file in the root directory of the application.
-
-Content of .env
+```js
+// .env
+REACT_APP_MESSAGE=This message is from an environment variable
 ```
-REACT_APP_TITLE="Demo App"
-```
 
-To use the environment variables, use the `process.env.REACT_APP_<variable_name>`
+To refer to the environment variable in your code, use `process.env.REACT_APP_<variable_name>`
 
-In App.js, input the following code:
+In `App.js`, input the following code:
 
 ```js
 function App() {
   return (
     <> 
-      <h1>{process.env.REACT_APP_TITLE}</h1>
+      ...
+      <h3>{process.env.REACT_APP_MESSAGE}</h3>
     </>
   );
 }
-
-export default App;
 ```
-
 The application should be able to display the environment variable in the screen.
 
----
+In a React development environment, you can use the built-in environment variable 
+`NODE_ENV` to determine the target application that is being compiled. This
+variable is read-only variable can be used to toggle debugging messages, for example.
 
+| Command | `NODE_ENV` value |
+|---|---|
+| `npm start` | development |
+| `npm run test` | test |
+| `npm run build` | production | 
 
----
+Let's add some verbose debugging messages into `SimpleForm`:
+```js
+// SimpleForm.js
+...
+handlerOnChange = (event) => {
+  ...
+  if (process.env.NODE_ENV === 'development')
+  console.log('userData', userData);
+}
+...
+```
+Run your application to see the debugging messages on the console window.
 
-## Part 3 - GitHub pages 
+```
+npm start
+```
+Start a new terminal window and run a production build with:
+```
+npm run build
+```
+This command will compile an optimised production build of your React 
+application into a folder called `build`. Change to the `build` folder
+and start the application, this time in production mode.
+```
+cd build
+npx serve
+```
+Since the debugging messages are only shown when `process.env.NODE.ENV === development`,
+they will not appear in the production build.
 
-Instructors are to follow this [guide](https://create-react-app.dev/docs/deployment/#github-pages) to deploy the page in github. It's better to fork and clone the lesson and deploy demo_app for students' benefit.
+Check out [this page](https://create-react-app.dev/docs/adding-custom-environment-variables/) 
+for more information on using environment variables on React apps.
+
+## Part 3: Deploying to GitHub Pages
+
+Follow this [guide](https://create-react-app.dev/docs/deployment/#github-pages) to deploy the page to GitHub. 
