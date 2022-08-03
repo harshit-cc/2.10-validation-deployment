@@ -10,7 +10,7 @@
 ---
 
 ### Q2: What does the number().max() mean in a schema?
-- **A: Determines the maximum number of digits of a variable**
+- A: Determines the maximum number of digits of a variable
 - B: Determines the required number of digits of a variable
 - C: Determines the required number of characters of variable
 - D: Determines the maximum number of characters of a variable
