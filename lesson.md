@@ -36,7 +36,7 @@ const schema = {
 The JOI schema is constructed using provided types and constraints. Refer to the JOI documentation
 for details of the schema definition.
 
-The next step is to validate the input values against the scheme:
+The next step is to validate the input values against the scheme. In order to get the name of the field to be validated, the computed property value can be used for both the object to compare and sub schema:
 
 ```js
 // components/SimpleForm.js
@@ -142,6 +142,6 @@ they will not appear in the production build.
 Check out [this page](https://create-react-app.dev/docs/adding-custom-environment-variables/) 
 for more information on using environment variables on React apps.
 
-## Part 3: Deploying to GitHub Pages
+## Part 3: Deploying to Netlify
 
-Follow this [guide](https://create-react-app.dev/docs/deployment/#github-pages) to deploy the page to GitHub. 
+Follow this [guide](https://www.freecodecamp.org/news/publish-your-website-netlify-github/) to deploy the page to Netlify. 
