@@ -18,9 +18,10 @@ Technical knowledge is vast. Timebox yourself for 3 hours to work on the followi
 - [Dotenv package](https://www.npmjs.com/package/dotenv)
 - [How to use dotenv](https://www.freecodecamp.org/news/how-to-use-node-environment-variables-with-a-dotenv-file-for-node-js-and-npm/)
 - [JOI package](https://www.npmjs.com/package/joi)
+- [Computed property names](https://ui.dev/computed-property-names)
+- [Netlify](https://www.netlify.com/)
+- [How to host pages using Netlify](https://www.freecodecamp.org/news/publish-your-website-netlify-github/)
+
+### Helpful Links
 - [Github pages](https://pages.github.com/)
 - [Deployment of React to github pages](https://create-react-app.dev/docs/deployment/)
-
-### Helpful Links (References)
-
-- Add links here
