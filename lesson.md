@@ -1,7 +1,7 @@
 # 2.10 Validation and Deployment
 ## Preparation
 
-Clone the lesson repository amd copy the starter code from `src/begin` into a work folder.
+Clone the lesson repository amd copy the starter code from `code/begin` into a work folder.
 
 ## Part 1: JOI Schema Validator
 
